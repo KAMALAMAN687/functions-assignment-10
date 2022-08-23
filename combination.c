@@ -12,7 +12,7 @@ int main()
 }
 int combination(int a, int b)
 {
-    int c,d=1,e,f,g=1;
+    int c,d=1,e,f,g=1,h=1,i;
     //calculate factorial of n
     for(c=1;c<=a;c++)
     {
@@ -26,6 +26,10 @@ int combination(int a, int b)
         g*=f;
 
     }
-    return d/g;
+    for(i=1;i<=b;i++)
+    {
+        h*=b;
+    }   
+    return d/g*h;
 
 }
